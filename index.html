@@ -170,6 +170,26 @@ nav ul li a:hover {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+  /* Position hero buttons at bottom of hero section */
+.hero {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+/* Center buttons at bottom */
+.hero-bottom-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Make hero image fill more space */
+.hero-image img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+}
+  
 /* ABOUT (Mission, Value Proposition, Snapshot) */
 .about {
   background-color: var(--navy-mid);
@@ -418,20 +438,18 @@ function onSubmitContactForm(event) {
 </nav>
 
 <section id="home" class="hero">
-  <div class="hero-content">
-
-    <!-- Minimal hero: no company name, no SDVOSB identity, no mission text -->
-    <!-- Buttons remain for strong calls to action -->
-
-    <div class="hero-buttons">
+  
+<div class="hero-image">
+    <img src="jointForces.png" alt="Defense engineers reviewing mission plans">
+  </div>
+  
+    <!-- Buttons moved to bottom of hero section -->
+    <div class="hero-buttons hero-bottom-buttons">
       <a href="#contact" class="primary">Contact Us</a>
       <a href="#capabilities" class="secondary">Learn More</a>
     </div>
-  </div>
-  <div class="hero-image">
-    <img src="jointForces.png" alt="Defense engineers reviewing mission plans">
-  </div>
-</section>
+  
+  </section>
 
 <section id="about" class="about">
   <h2>About Envisage Ventures</h2>
