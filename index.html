@@ -291,6 +291,11 @@ nav ul li a:hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+  .offering {
+  padding: 12px;
+  margin-bottom: 18px;
+}
+
 .offering:hover {
   background-color: var(--navy-accent);
   transform: translateX(8px);
@@ -433,6 +438,7 @@ function onSubmitContactForm(event) {
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#offerings">Offerings</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -572,7 +578,7 @@ function onSubmitContactForm(event) {
     </table>
   </div>
 
-  <div class="offerings">
+  <div id="offerings" class="offerings">
     <h3>Core Technical Offerings</h3>
 
     <div class="offering">
