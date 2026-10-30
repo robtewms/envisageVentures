@@ -291,6 +291,16 @@ nav ul li a:hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+  /* Force smaller icons in Core Technical Offerings */
+.offerings .offering svg {
+  width: 50px;    /* down from 70px */
+  height: 50px;   /* down from 70px */
+}
+
+  /* Make the Offerings anchor stop higher on the page */
+#offerings {
+  scroll-margin-top: 140px;  /* tune 120–160px until it feels right */
+}
   .offering {
   padding: 12px;
   margin-bottom: 18px;
